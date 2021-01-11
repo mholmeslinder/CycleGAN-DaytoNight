@@ -13,5 +13,9 @@ Since this project is built on a proprietary dataset that's not publicly availab
 2. Just look. The .ipynb walks through all the steps for building these models from scratch and shows results, so you can see the entire step-by-step process there.
 
 ## Models
-![generator](https://github.com/mholmeslinder/CycleGAN-DaytoNight/blob/main/generator_model_plot.png)
+Our discriminator is a PatchGAN model - meaning, it classifies whether specific `n x n` (in this case 32 x 32) *patches* of an image are real or fake.
 ![discriminator](https://github.com/mholmeslinder/CycleGAN-DaytoNight/blob/main/discriminator_model_plot.png)
+
+The generator model is an encoder-decoder that uses 9 `ResNet` residual convolutional blocks for our 256x256 input images.
+![generator](https://github.com/mholmeslinder/CycleGAN-DaytoNight/blob/main/generator_model_plot.png)
+
